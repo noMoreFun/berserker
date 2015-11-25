@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #react-main-mount
+    h1 哈哈 
+
+  block scripts
+  script(src='/javascripts/main.min.js')
