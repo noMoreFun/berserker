@@ -1,10 +1,11 @@
 var React  = require('react');
 
+var shopDescData = require('../data/shopDescData.js');
+
 var ShopDescStyle = {
   minHeight: '320px',
   overflow: 'hidden'
 };
-
 
 var ShopDesc = React.createClass({
   getInitialState: function() {
@@ -15,15 +16,15 @@ var ShopDesc = React.createClass({
   },
   componentDidMount: function() {
     // this.loadFromServer();
+    this.setState({data:shopDescData.shopDescData});
   }, 
   render: function() {
     return (
       <div>
         <div>
-          <img className="shop-img" style={ShopDescStyle} src={this.state.data.pictures[0]}/>
+          <img className="shop-img" style={ShopDescStyle} src={this.state.data.pictures[0]} />
         </div>
         <section className="pg-good-b">
-          
           <div className="pg-price clr">
             <div className="pg-price-l l">
               <strong className="l">¥</strong>

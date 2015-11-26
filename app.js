@@ -5,6 +5,12 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// Make sure to include the JSX transpiler
+
+require("babel-register")({
+    ignore: false
+});
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 

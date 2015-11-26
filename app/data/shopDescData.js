@@ -1,0 +1,33 @@
+var shopDescData =  {
+  "id": 7,
+  "agreement": "配送时间：下单后2-3个工作日发货\n配送范围：全国（新疆、西藏、港澳台等偏远地区除外）\n退换货须知：订单只能退，不能换；1个订单最多只能进行1次退货处理；未经客服允许，退换货一律不予受理。\n客服联系QQ：2899133590\n客服在线时间：10:00-18:00（周一至周五）",
+  "count": 98,
+  "valid": false,
+  "pictures": ["http://img4q.duitang.com/uploads/people/201507/22/20150722161241_wWuXd.jpeg", "http://img4q.duitang.com/uploads/people/201507/22/20150722161314_uVaKk.jpeg", "http://img4q.duitang.com/uploads/people/201507/22/20150722162205_aEXmP.jpeg", "http://img4q.duitang.com/uploads/people/201507/22/20150722161524_ZvTkX.jpeg"],
+  "status": "0",
+  "supplier_name": "幸福杂货铺",
+  "supplier_id": "5",
+  "inventory_name": "可爱笑脸不锈钢木柄餐具 5件套",
+  "inventory_desc": "厚实木柄可以立放，干净卫生。迷你尺寸也适合外带。五件套礼盒    \n内含：餐勺、餐叉、开瓶器、削皮器、牙签筒。都很实用，外有礼盒包装适合送人 。\n",
+  "inventory_cat": "日杂",
+  "inventory_attr": "礼盒内容:餐勺、餐叉、开瓶器、削皮器、牙签筒/n 盒子尺寸:28cm × 19cm × 4cm",
+  "buy_limit": 10,
+  "market_price": 58.0,
+  "sale_price": 37.0,
+  "batch_no": 20150726,
+  "onsale_time": 1437876000000,
+  "offsale_time": 1438394400000,
+  "logistics_price": "¥0.00",
+  "logistics_threshold": 0.0,
+  "inventory_type": 1,
+  "overseas_intro": "",
+  "cart_available": 1,
+  "delivery_type": 1,
+  "banner_title": "",
+  "banner_link": "",
+  "related_blogs": [],
+  "detail_desc_pics": [],
+  "inventory_caption": ""
+};
+
+module.exports.shopDescData = shopDescData;
