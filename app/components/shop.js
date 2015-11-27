@@ -1,6 +1,10 @@
 var React  = require('react');
+var $ = require('jquery');
 
 var shopDescData = require('../data/shopDescData.js');
+
+// var shopDescData = {shopDescData: {pictures:[]}};
+// console.log(myServerData);
 
 var ShopDescStyle = {
   minHeight: '320px',
@@ -12,19 +16,29 @@ var ShopDesc = React.createClass({
     return {data: {pictures:[]}};
   },
   loadFromServer: function() {
+    $.ajax({
+      type: "GET",
+      url: "www.baiduee.com",
+      success: function(jsn) {
+        console.log(jsn);
+        this.setState({data:shopDescData.shopDescData});
 
+      }
+    });
   },
   componentDidMount: function() {
     // this.loadFromServer();
-    this.setState({data:shopDescData.shopDescData});
+    // alert('aa');
   }, 
   render: function() {
+    console.log(this.props);
     return (
       <div>
         <div>
           <img className="shop-img" style={ShopDescStyle} src={this.state.data.pictures[0]} />
         </div>
         <section className="pg-good-b">
+          <h1>{this.props.data}</h1>
           <div className="pg-price clr">
             <div className="pg-price-l l">
               <strong className="l">¥</strong>
