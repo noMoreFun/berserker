@@ -2,7 +2,6 @@ var React = require('react');
 
 var HelloMessage = React.createClass({
   componentDidMount: function() {
-    console.log(this.props);
   },
   render: function() {
     return (
