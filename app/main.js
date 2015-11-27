@@ -5,6 +5,10 @@ var ReactDOM = require('react-dom');
 
 var mountNode = document.getElementById("react-main-mount");
 
-var Shop = require('./components/Shop');
+var shopDescData = require('./data/shopDescData.js');
 
-ReactDOM.render(<Shop />, mountNode);
+// console.log(shopDescData.shopDescData);
+
+var Shop = require('./components/helloMessage');
+
+ReactDOM.render(<Shop data={shopDescData.shopDescData} />, mountNode);
