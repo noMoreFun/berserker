@@ -17,6 +17,8 @@
     "jade": "~1.8.2",
     "jquery": "^2.1.4",
     "morgan": "~1.5.1",
+    "redux": "^3.0.4",
+    "redux-devtools": "^2.1.5",
     "request": "^2.67.0",
     "serve-favicon": "~2.2.0",
     "webpack": "^1.12.9"
